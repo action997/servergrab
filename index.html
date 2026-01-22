@@ -57,7 +57,7 @@ body, html {height:100%; font-family: 'Poppins', sans-serif; overflow-x:hidden; 
 
 /* ===== Buttons ===== */
 .button {
-    padding:16px 45px;
+    padding:16px 35px;
     font-size:18px;
     font-weight:600;
     color:#fff;
@@ -77,6 +77,15 @@ body, html {height:100%; font-family: 'Poppins', sans-serif; overflow-x:hidden; 
 }
 .button:hover {transform:scale(1.1); box-shadow:0 10px 25px rgba(0,0,0,0.4);}
 @keyframes gradientAnim {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+/* ===== Buttons Container for multiple buttons ===== */
+.buttons-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:20px;
+}
 
 /* ===== Emojis Section ===== */
 .emoji-text {
@@ -116,7 +125,7 @@ footer .contact-btn:hover {background:rgba(255,255,255,0.35);}
 /* ===== Responsive ===== */
 @media(max-width:480px){
     .logo {width:140px;height:140px;margin-bottom:25px;}
-    .button {padding:12px 30px; font-size:16px;}
+    .button {padding:12px 25px; font-size:16px;}
     .emoji-text {font-size:20px;}
     footer img {width:35px;}
     footer .contact-btn {font-size:12px;}
@@ -133,10 +142,13 @@ footer .contact-btn:hover {background:rgba(255,255,255,0.35);}
     <!-- Logo -->
     <div class="logo"></div>
 
-    <!-- Access Button -->
-    <a href="https://t.me/sohamgameplay" target="_blank" class="button">
-        <i class="fab fa-telegram-plane"></i> Access Content
-    </a>
+    <!-- Buttons Container -->
+    <div class="buttons-container">
+        <a href="https://server1.example.com" target="_blank" class="button">Server 1</a>
+        <a href="https://server2.example.com" target="_blank" class="button">Server 2</a>
+        <a href="https://server3.example.com" target="_blank" class="button">Server 3</a>
+        <a href="https://server4.example.com" target="_blank" class="button">Server 4</a>
+    </div>
 
     <!-- Emojis -->
     <div class="emoji-text">
